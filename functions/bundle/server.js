@@ -1,7 +1,7 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const contact = require('../../assets/contact.json')
+const contact = require('../assets/contact.json')
 
 const typeDefs = gql`
   type Query {
