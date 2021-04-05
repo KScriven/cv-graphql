@@ -13,6 +13,7 @@ const typeDefs = gql`
     emailAddress: String
     employment: String
     hobbies: String
+    intro: String
     technology: String
   }
 `;
@@ -20,6 +21,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Created with graphQL by Kerryn Scriven",
+
     achievements: () => cv.status,
     college: () => cv.college,
     contact: () => cv.contact_comments,
@@ -27,6 +29,7 @@ const resolvers = {
     emailAddress: () => cv.email_address,
     employment: () => cv.mainResponsibilities,
     hobbies: () => cv.hobbies,
+    intro: () => cv.intro,
     technology: () => cv.currentProgrammingLanguages,
   }
 };
