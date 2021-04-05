@@ -1,12 +1,12 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const achievements = require('../assets/achievements.json');
+const achievements = require('../assets/achievements.json')
 const contact = require('../assets/contact.json');
 const education = require('../assets/education.json');
 const employment = require('../assets/employment.json');
 const hobbies = require('../assets/hobbies.json');
-const technology = require('../assets/technology.json');
+const technology = require('../assets/technology.json')
 
 const typeDefs = gql`
   type Query {
