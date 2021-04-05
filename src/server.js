@@ -14,6 +14,7 @@ const typeDefs = gql`
     employment: String
     hobbies: String
     intro: String
+    linkedIn: String
     technology: String
   }
 `;
@@ -30,6 +31,7 @@ const resolvers = {
     employment: () => cv.mainResponsibilities,
     hobbies: () => cv.hobbies,
     intro: () => cv.intro,
+    linkedIn: () => cv.linkedIn,
     technology: () => cv.currentProgrammingLanguages,
   }
 };
