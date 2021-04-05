@@ -1,12 +1,7 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const achievements = require('./assets/achievements.json')
-const contact = require('./assets/contact.json');
-const education = require('./assets/education.json');
-const employment = require('./assets/employment.json');
-const hobbies = require('./assets/hobbies.json');
-const technology = require('./assets/technology.json')
+const cv = require('./cv.json')
 
 const typeDefs = gql`
   type Query {
@@ -25,14 +20,14 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Created with graphQL by Kerryn Scriven",
-    achievements: () => achievements.status,
-    college: () => education.college,
-    contact: () => contact.contact_comments,
-    diploma: () => education.diploma,
-    emailAddress: () => contact.email_address,
-    employment: () => employment,
-    hobbies: () => hobbies.now,
-    technology: () => technology.currentProgrammingLanguages,
+    achievements: () => cv.status,
+    college: () => cv.college,
+    contact: () => cv.contact_comments,
+    diploma: () => cv.diploma,
+    emailAddress: () => cv.email_address,
+    employment: () => cv.mainResponsibilities,
+    hobbies: () => cv.hobbies,
+    technology: () => cv.currentProgrammingLanguages,
   }
 };
 

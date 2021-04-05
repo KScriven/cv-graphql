@@ -1,4 +1,8 @@
 {
+  "email_address": "kerryn.lloyd@gmail.com",
+  "contact_comments": "If you'd like to keep in touch, you're most welcome to send an email, I don't always get the chance to respond, but email is always the best way to get in touch.", 
+  "college": "Cape College, Cape Town",
+  "diploma": "N3 National Diploma in Business Practices",
   "currentJobStatus": "full time contract",
   "currnetJobTitle": "Software Engineer",
   "currentEmployer": "BBC",
@@ -23,5 +27,7 @@
   "oldJobTitle": "Presales Consultant",
   "oldEmployer": "ETC Distribution",
   "oldStartDate": "01-03-1999",
-  "oldRoleResponsibilities": "supported clients maintaining on their IT on premise solutions"
+  "oldRoleResponsibilities": "supported clients maintaining on their IT on premise solutions",
+  "currentProgrammingLanguages": "php, nodeJS, reactJS, HTML and CSS",
+  "hobbies": "recently found a love of japanese food, so I tend to eat and cook a lot of it.  i trained and recently ran a half marathon.  i am an avid reader"
 }
