@@ -25,14 +25,14 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Created with graphQL by Kerryn Scriven",
-  //  achievements: () => achievements.status,
-  //  college: () => education.college,
-      contact: () => contact.contact_comments,
-    // diploma: () => education.diploma,
-    // emailAddress: () => contact.email_address,
-    // employment: () => employment,
-    // hobbies: () => hobbies.now,
-    // technology: () => technology.currentProgrammingLanguages,
+    achievements: () => achievements.status,
+    college: () => education.college,
+    contact: () => contact.contact_comments,
+    diploma: () => education.diploma,
+    emailAddress: () => contact.email_address,
+    employment: () => employment,
+    hobbies: () => hobbies.now,
+    technology: () => technology.currentProgrammingLanguages,
   }
 };
 
