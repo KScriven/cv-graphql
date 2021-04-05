@@ -2,7 +2,7 @@ const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
 //const achievements = require('../assets/achievements.json')
-//const contact = require('../assets/contact.json');
+const contact = require('./assets/contact.json');
 // const education = require('../assets/education.json');
 // const employment = require('../assets/employment.json');
 // const hobbies = require('../assets/hobbies.json');
@@ -13,7 +13,7 @@ const typeDefs = gql`
     hello: String 
     achievements: String
     college: String
-    contactComment: String
+    contact: String
     diploma: String
     emailAddress: String
     employment: String
@@ -27,7 +27,7 @@ const resolvers = {
     hello: () => "Created with graphQL by Kerryn Scriven",
   //  achievements: () => achievements.status,
   //  college: () => education.college,
-  //  contactComment: () => contact.contact_comments,
+      contact: () => contact.contact_comments,
     // diploma: () => education.diploma,
     // emailAddress: () => contact.email_address,
     // employment: () => employment,
