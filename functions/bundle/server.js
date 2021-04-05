@@ -25,7 +25,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Created with graphQL by Kerryn Scriven",
-    achievements: () => 'To be completed',
+    achievements: () => achievements.status,
     college: () => education.college,
     contactComment: () => contact.contact_comments,
     diploma: () => education.diploma,
