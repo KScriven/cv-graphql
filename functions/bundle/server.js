@@ -11,6 +11,7 @@ const technology = require('../assets/technology.json')
 const typeDefs = gql`
   type Query {
     hello: String 
+    achievements: String
     college: String
     contactComment: String
     diploma: String
