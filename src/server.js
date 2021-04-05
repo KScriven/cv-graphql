@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello: String 
     achievements: String
+    currentProgrammingLanguages: String
     college: String
     contact: String
     diploma: String
@@ -22,8 +23,8 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Created with graphQL by Kerryn Scriven",
-
     achievements: () => cv.status,
+    currentProgrammingLanguages: () => cv.currentProgrammingLanguages,
     college: () => cv.college,
     contact: () => cv.contact_comments,
     diploma: () => cv.diploma,
