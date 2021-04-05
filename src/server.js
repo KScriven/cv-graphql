@@ -1,7 +1,6 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const contact = require('../assets/contact.json')
 const achievements = require('../assets/achievements.json')
 const contact = require('../assets/contact.json');
 const education = require('../assets/education.json');
