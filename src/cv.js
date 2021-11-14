@@ -1,6 +1,10 @@
-const getCVdata = (cv) => {
+const getCVdata = (cvInputData) => {
 
-  return cv
+  if (cvInputData) {
+
+    return cvInputData
+  }
+
 }
 
 module.exports = { getCVdata }

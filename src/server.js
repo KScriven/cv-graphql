@@ -109,7 +109,11 @@ const resolvers = {
     },
     // employment: () => cv.mainResponsibilities,
     // hobbies: () => cv.hobbies,
-    intro: () => cv.intro,
+    intro: () => {
+      const data = getCVdata(cvData)
+
+      return data.intro;
+    },
     linkedIn: () => {
       const data = getCVdata(cvData)
 
