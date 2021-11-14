@@ -1,8 +1,8 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const cv = require('../src/cv.json')
-const blogs = require('../src/blogs.json')
+const cv = require('./cv')
+const blogs = require('./blogs')
 
 const typeDefs = gql`
   type Query {

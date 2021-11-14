@@ -1,8 +1,8 @@
 const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
-const cv = require('../src/cv.js')
-const blogs = require('../src/blogs.js')
+const cv = require('./cv')
+const blogs = require('./blogs')
 
 const typeDefs = gql`
   type Query {
@@ -41,17 +41,13 @@ const resolvers = {
     // college: () => cv.college,
     // contact: () => cv.contact_comments,
     // diploma: () => cv.diploma,
-    emailAddress: () => {
-      return cv().emailAddress
-    },
+    emailAddress: () => cv.email_address,
     // employment: () => cv.mainResponsibilities,
     // hobbies: () => cv.hobbies,
     intro: () => cv.intro,
     linkedIn: () => cv.linkedIn,
     blogs: () => {
       let blogResults = []
-      const blogs = blogs();
-
       blogs.map(blog => {
         blogResults.push({
           intro: blog.intro,
