@@ -1,24 +1,17 @@
-const blogs = () => {
-  return
-  [
-    {
-      "intro": "why I decided to learn to code",
-      "myBiggestTakeAways": "myBiggestTakeAways",
-      "theDailyGrind": "theDailyGrind",
-      "theThingsILove": "theThingsILove",
-      "theThingsIDisLike": "theThingsIDislike",
-      "interestingFacts": "interestingFacts"
-    },
+const getAllBlogs = (blogPosts) => {
+  const allPosts = []
+  blogPosts.map((blog) => {
+    allPosts.push({
+      intro: blog.intro,
+      myBiggestTakeAways: blog.myBiggestTakeAways,
+      theDailyGrind: blog.theDailyGrind,
+      theThingsILove: blog.theThingsILove,
+      theThingsIDisLike: blog.theThingsIDisLike,
+      interestingFacts: blog.interestingFacts
+    })
+  })
 
-    {
-      "intro": "netlify, react, graphql and simple htmls",
-      "myBiggestTakeAways": "myBiggestTakeAways",
-      "theDailyGrind": "theDailyGrind",
-      "theThingsILove": "theThingsILove",
-      "theThingsIDisLike": "theThingsIDislike",
-      "interestingFacts": "interestingFacts"
-    }
-  ]
+  return allPosts
 }
 
-export default blogs
+module.exports = { getAllBlogs }

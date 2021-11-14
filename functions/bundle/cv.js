@@ -41,4 +41,3 @@ const cv = () => {
 
 }
 
-export default cv
